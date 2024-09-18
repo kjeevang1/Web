@@ -1,7 +1,7 @@
 .poem-container {
     display: flex;
     justify-content: center; /* Centers the content horizontally */
-    align-items: center; /* Centers the content vertically */
+    align-items: flex-start; /* Centers the content vertically */
     padding: 20px;
     min-height: 100vh; /* Ensures the container takes the full viewport height */
     /* Light background for better readability */
@@ -12,10 +12,7 @@
     padding: 2px;
     font-size: 30px; /* Default font size */
     font-family: 'Peddana', serif;
-    text-shadow: 0 0 5px #fff,    /* Subtle white glow */
-    0 0 2px #ffffff, /* Stronger orange glow */
-    0 0 2px #ffffff, /* Stronger orange glow */
-    0 0 3px #fffffe; /* Stronger red glow */
+    Stronger red glow */
     line-height: 1.5;
     border: 1px solid #43e1d1;
     border-radius: 20px;
