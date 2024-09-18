@@ -3,6 +3,7 @@
 <head>
     <link rel="icon" type="image/png" href="Login_logo.png">
     <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         * {
             margin: 0;
@@ -14,8 +15,8 @@
             background: linear-gradient(135deg, #74ebd5, #ACB6E5);
             display: flex;
             justify-content: center;
-            align-items: flex-start;
-            height:100vh;
+            align-items: center;
+            height: 100vh;
             padding: 20px;
         }
 
@@ -25,7 +26,7 @@
             border-radius: 20px;
             box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
             width: 100%;
-            max-width: 50%;
+            max-width: 400px;
             text-align: center;
         }
 
@@ -63,7 +64,6 @@
             background-color: #029d6c;
             border: 1px solid #00cf8e;
             cursor: pointer;
-            font-size: 20px;
         }
 
         button:hover {
@@ -75,17 +75,16 @@
             margin-bottom: 10px;
         }
 
-        
+        /* Media query for smaller screens (mobile) */
         @media (max-width: 600px) {
             .loginbox {
-                padding: 20px;
-                box-shadow: none;
-                border-radius: 10px;
+                width: 40%; /* Occupy 40% of the screen width */
+                padding: 15px;
             }
 
-            input {
-                padding: 8px;
-                font-size: 14px;
+            h2 {
+                font-size: 22px;
+                padding: 15px;
             }
 
             button {
@@ -93,9 +92,9 @@
                 font-size: 18px;
             }
 
-            h2 {
-                font-size: 22px;
-                padding: 15px;
+            input {
+                padding: 8px;
+                font-size: 14px;
             }
         }
     </style>
