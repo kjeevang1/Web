@@ -20,7 +20,7 @@
     max-width: 800px; /* Limit max width for better readability */
     width: 100%; /* Make it responsive to container width */
     overflow-x: auto; 
-    background: linear-gradient(50deg, #adb5dd,#aedfd6);
+    background:white ;
 
     /* Adds horizontal scroll if content overflows */
   }
