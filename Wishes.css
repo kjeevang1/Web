@@ -1,0 +1,137 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+
+}
+
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    width: 100%; 
+    z-index: 10;
+    text-align: center;
+    padding: 8px 0;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+
+    
+}
+
+.sticky-header h1 {
+    font-size: 3em;
+    color: #ff0000;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-style: italic ;
+    text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.763);
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .sticky-header h1 {
+        font-size: 2em;
+    }
+}
+
+
+.content {
+    text-align: center;
+    padding: 50px 20px 50px;
+    z-index: 2;
+    position: relative;
+}
+
+p {
+    font-size: 1.5em;
+    margin-bottom: 50px;
+    color: #333;
+    margin-left:15px;
+    margin-RIGHT:20px;
+    text-align: justify;
+}
+
+
+.birthday-video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.birthday-picture img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+#confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    opacity: 0.8; 
+    border-radius: 50%;
+    animation: confetti-fall 9s linear infinite; 
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Carousel */
+
+
+.carousel {
+    width: 100%;
+    max-width: 600px; /* Maximum width for larger screens */
+    height: 300px; /* Fixed height for carousel */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-track {
+    display: flex; /* Flexbox for horizontal alignment */
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel img {
+    min-width: 100%; /* Each image takes full width of the carousel */
+    height: 100%; /* Make sure the height is always 100% */
+    object-fit: cover; /* Cover the container without stretching */
+  }
+  

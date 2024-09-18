@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <link rel="icon" type="image/png" href="B logo.png">
+    <title>Beaulah's Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Peddana&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Wishes.css">
+    <link rel="stylesheet" href="poem.css">
+
+    <style>
+
+        #play-button {
+            margin-top: 10px;
+           
+            padding: 10px 20px;
+            font-size: 18px;
+            background: linear-gradient(135deg,#dc6c6c, #93e83e );
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 0px;
+            border-top-right-radius: 40px;
+            border-bottom-right-radius: 40px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+      
+        #play-button:hover {
+            background: linear-gradient(135deg,#99a9ee,#5aecd1);
+
+        }
+
+        
+        #play-button:active {
+            transform: scale(0.98);
+            background: linear-gradient(135deg,#ACB6E5,#74ebd5);
+        }
+        
+    </style>
+
+</head>
+
+
+
+<body>
+    <div class="sticky-header">
+        <h1>🎉 Happy Birthday Akka 🎉</h1>
+    </div>
+
+    <div id="Audio">
+    <button id="play-button">hae, Hit me beaulah</button>
+    <audio id="audio-file" autoplay loop>
+        <source src="Audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+   </div>
+
+    <div class="content">
+        <video class="birthday-video" autoplay muted loop playsinline>
+            <source src="video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+       
+       <div class="poem-container">
+        <pre>
+        <h2>    ఓ చిన్న కవితలాంటిది ✍🏻</h3>
+        అక్కా...  నా  గుండె  ముత్యమా... నవ్వుల  పూలమా.... 
+        తోడుండే  దీపమా...   వదినల  వాత్సల్యమా.... 
+            
+        నువ్వు  అందించె  అనుబంధం,  
+        అదో  మిఠాయి  పొట్లం ,
+            
+        నువ్వు  నవ్వితే  రోజు  మధురం,
+        నీ  తోడుంటే  దారి  గోదారిలా  సజలం, 
+            
+        కన్నీటికి  కూడా  కమ్మదనాన్నిచ్చే  నీ  స్నేహం,
+        అంతులేని  సంతోషం,
+            
+        జీవిత  పయనం  నీ  తోడుతో  తీపి  స్వప్నం.
+            
+        పరిచయాలు  చేసే  జ్ఞాపకాలు  ఎన్నో, 
+        జ్ఞాపకాలు  మిగిలిచే  గుర్తులు  ఎన్నో,
+
+        నా  ఈ  చిన్ని  జీవితంలో  ఎన్ని  సంబంధాలు  ఉన్నా,
+        నీ  స్నేహం,  నీ  ప్రేమ  ఎప్పటికీ  శాశ్వతం.
+
+        ఆలాంటి  నా  ప్రియ  అందమైన  అక్కకు,
+        నా  ఈ  పుట్టినరోజు  హృదయపూర్వక  శుభాకాంక్షలు.
+        ప్రతిక్షణం  నీ  చిరునవ్వులు  తోడై  ఉండాలని  కోరుకుంటూ ..    
+            </pre>
+        </div>
+        
+        <div class="birthday-picture">
+            <img src="image2.jpg" alt="Your Picture">
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit odit quisquam, in, expedita officiis atque sit aspernatur laborum similique voluptatum rerum ullam qui nostrum? Commodi nisi illo ad adipisci quis.</p>
+
+        <div class="carousel">
+            <div class="carousel-track">
+              <img src="image1.jpg" alt="Image 1">
+              <img src="image2.jpg" alt="Image 2">
+              <img src="image3.jpg" alt="Image 3">
+              <img src="image4.jpg" alt="Image 4">
+            </div>
+          </div> 
+
+    </div>
+
+
+
+    <div id="confetti-container"></div>
+    <script src="Wishes.js"></script>
+
+
+    <script>
+        
+        const audio = document.getElementById('audio-file');
+        const playButton = document.getElementById('play-button');
+
+       
+        playButton.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                playButton.textContent = "good, Beaulah";
+            } else {
+                audio.pause();
+                playButton.textContent = "hae, Hit me beauhah";
+            }
+        });
+    </script>
+
+    <script>
+         const track = document.querySelector('.carousel-track');
+        const images = document.querySelectorAll('.carousel img');
+        let currentIndex = 0;
+        const totalImages = images.length;
+        
+        function moveToNextSlide() {
+          currentIndex++;
+          
+          if (currentIndex >= totalImages) {
+            currentIndex = 0; // Reset to the first image after the last
+          }
+          
+          const moveAmount = -currentIndex * 100; // Move track by 100% for each image
+          track.style.transform = `translateX(${moveAmount}%)`;
+        }
+        
+        // Auto-slide every 3 seconds
+        setInterval(moveToNextSlide, 3000);</script>
+
+</body>
+</html>
