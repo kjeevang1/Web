@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-   <link rel="icon" type="image/png" href="B_logo.jpg">
+    <link rel="icon" type="image/png" href="B_logo.jpg">
     <title>Beaulah's Website</title>
     <link href="https://fonts.googleapis.com/css2?family=Peddana&display=swap" rel="stylesheet">
 
@@ -12,10 +12,10 @@
     <style>
 
         #play-button {
-            margin-top: 10px;
+            margin-top: 15px;
            
             padding: 10px 20px;
-            font-size: 25px;
+            font-size: 27px;
             background: linear-gradient(135deg,#dc6c6c, #93e83e );
             color: rgb(255, 255, 255);
             border: none;
@@ -28,15 +28,10 @@
 
       
         #play-button:hover {
-            background: linear-gradient(135deg,#99a9ee,#5aecd1);
+            background: linear-gradient(135deg,#93e83e,#dc6c6c);
 
         }
 
-        
-        #play-button:active {
-            transform: scale(0.98);
-            background: linear-gradient(135deg,#ACB6E5,#74ebd5);
-        }
         
     </style>
 
@@ -50,7 +45,7 @@
     </div>
 
     <div id="Audio">
-    <button id="play-button">hae, Hit me beaulah</button>
+    <button id="play-button">Hey👋🏻, Click here</button>
     <audio id="audio-file" autoplay loop>
         <source src="Audio.mp3" type="audio/mp3">
         Your browser does not support the audio element.
@@ -63,9 +58,26 @@
             Your browser does not support the video tag.
         </video>
        
+
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit odit quisquam, in, expedita officiis atque sit aspernatur laborum similique voluptatum rerum ullam qui nostrum? Commodi nisi illo ad adipisci quis.</p>
+
+        <div class="carousel">
+            <div class="carousel-track">
+              <img src="image1.jpeg" alt="Image 1">
+              <img src="image2.jpeg" alt="Image 2">
+              <img src="image3.jpeg" alt="Image 3">
+              <img src="image4.jpeg" alt="Image 4">
+            </div>
+        </div> 
+
+
+       
+
+
        <div class="poem-container">
         <pre>
-        <h2>    ఓ చిన్న కవితలాంటిది ✍🏻</h3>
+        <h2>    ఓ చిన్న కవితలాంటిది 👨🏻‍💻</h3>
         అక్కా...  నా  గుండె  ముత్యమా... నవ్వుల  పూలమా.... 
         తోడుండే  దీపమా...   వదినల  వాత్సల్యమా.... 
             
@@ -92,20 +104,12 @@
             </pre>
         </div>
         
+       
         <div class="birthday-picture">
-            <img src="image2.jpg" alt="Your Picture">
+            <img src="image2.jpeg" alt="Your Picture">
         </div>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit odit quisquam, in, expedita officiis atque sit aspernatur laborum similique voluptatum rerum ullam qui nostrum? Commodi nisi illo ad adipisci quis.</p>
-
-        <div class="carousel">
-            <div class="carousel-track">
-              <img src="image1.jpg" alt="Image 1">
-              <img src="image2.jpg" alt="Image 2">
-              <img src="image3.jpg" alt="Image 3">
-              <img src="image4.jpg" alt="Image 4">
-            </div>
-          </div> 
+      
 
     </div>
 
@@ -124,10 +128,10 @@
         playButton.addEventListener('click', () => {
             if (audio.paused) {
                 audio.play();
-                playButton.textContent = "good, Beaulah";
+                playButton.textContent = "Control Audio";
             } else {
                 audio.pause();
-                playButton.textContent = "hae, Hit me beauhah";
+                playButton.textContent = "Hey👋🏻, Click here";
             }
         });
     </script>
