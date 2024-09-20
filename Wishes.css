@@ -49,15 +49,15 @@ p {
     font-size: 1.5em;
     margin-bottom: 50px;
     color: #333;
-    margin-left:15px;
-    margin-RIGHT:20px;
+    margin-left:10%;
+    margin-RIGHT:10%;
     text-align: justify;
 }
 
 
 .birthday-video {
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     height: auto;
 
     border-radius: 15px;
@@ -118,8 +118,8 @@ p {
 
 .carousel {
     width: 100%;
-    max-width: 800px; /* Maximum width for larger screens */
-    height: 400px; /* Fixed height for carousel */
+    max-width: 900px; /* Maximum width for larger screens */
+    height: 500px; /* Fixed height for carousel */
     overflow: hidden;
     position: relative;
 
