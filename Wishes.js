@@ -11,7 +11,7 @@ function createConfetti() {
     confetti.style.animationDuration = Math.random() * 5 + 4 + "s"; // Slower falling speed (between 4 to 9 seconds)
 
     // Randomize confetti size and color
-    confetti.style.width = Math.random() * 10 + 5 + "px";
+    confetti.style.width = Math.random() * 20 + 10 + "px";
     confetti.style.height = confetti.style.width; // Keep it square
     confetti.style.backgroundColor = randomColor();
 
