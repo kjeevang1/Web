@@ -118,8 +118,8 @@ p {
 
 .carousel {
     width: 100%;
-    max-width: 1200px; /* Maximum width for larger screens */
-    height: auto; /* Fixed height for carousel */
+    max-width: 600px; /* Maximum width for larger screens */
+    height: 300px; /* Fixed height for carousel */
     overflow: hidden;
     position: relative;
     margin-top:150px;
@@ -132,8 +132,8 @@ p {
   }
   
   .carousel img {
-    max-width: 900px; /* Each image takes full width of the carousel */
-    height: auto; /* Make sure the height is always 100% */
+    min-width: 100%; /* Each image takes full width of the carousel */
+    height: 100%; /* Make sure the height is always 100% */
     object-fit: cover;
       border-radius:15px;
     justify-content:center;
