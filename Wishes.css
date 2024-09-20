@@ -145,7 +145,7 @@ p {
 
     max-width: 900px; /* Each image takes full width of the carousel */
 
-    height: 100%; /* Make sure the height is always 100% */
+    height: 450px; /* Make sure the height is always 100% */
 
     object-fit: cover; /* Cover the container without stretching */
 
