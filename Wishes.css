@@ -134,7 +134,8 @@ p {
     min-width: 100%; /* Each image takes full width of the carousel */
     height: 100%; /* Make sure the height is always 100% */
     object-fit: cover;
-      border-radius:10px;
-    justify-content:center;/* Cover the container without stretching */
+      border-radius:15px;
+    justify-content:center;
+      align-items:center;/* Cover the container without stretching */
   }
   
