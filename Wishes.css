@@ -122,6 +122,8 @@ p {
     height: 400px; /* Fixed height for carousel */
     overflow: hidden;
     position: relative;
+    border-radius:10px:
+    justify-content:center;
 
   }
   
