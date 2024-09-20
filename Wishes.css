@@ -1,4 +1,4 @@
-
+ki
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -118,10 +118,11 @@ p {
 
 .carousel {
     width: 100%;
-    max-width: 600px; /* Maximum width for larger screens */
-    height: 300px; /* Fixed height for carousel */
+    max-width: 800px; /* Maximum width for larger screens */
+    height: 400px; /* Fixed height for carousel */
     overflow: hidden;
     position: relative;
+
   }
   
   .carousel-track {
