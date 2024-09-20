@@ -58,7 +58,7 @@ p {
 .birthday-video {
     width: 100%;
     max-width: 900px;
-    height: auto;
+    height: 450px;
 
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -87,8 +87,8 @@ p {
 
 .confetti {
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     opacity: 0.8; 
     border-radius: 50%;
     animation: confetti-fall 9s linear infinite; 
@@ -131,8 +131,8 @@ p {
   }
   
   .carousel img {
-    min-width: 100%; /* Each image takes full width of the carousel */
-    height: 100%; /* Make sure the height is always 100% */
+    max-width: 900px; /* Each image takes full width of the carousel */
+    height: 450px; /* Make sure the height is always 100% */
     object-fit: cover;
       border-radius:15px;
     justify-content:center;
