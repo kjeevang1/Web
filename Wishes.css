@@ -47,8 +47,7 @@ body {
 
 p {
     font-size: 2em;
-    margin-bottom: 60px;
-    margin-top:60px;
+    
     color: #333;
     margin-left:6%;
     margin-RIGHT:6%;
@@ -58,9 +57,9 @@ p {
 
 .birthday-video {
     width: 100%;
-    max-width: 900px;
-    height: 500px;
-    margin-bottom:50px;
+    max-width: 800px;
+    height: auto;
+
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -120,7 +119,7 @@ p {
 .carousel {
     width: 100%;
     max-width: 1200px; /* Maximum width for larger screens */
-    height: 550px; /* Fixed height for carousel */
+    height: auto; /* Fixed height for carousel */
     overflow: hidden;
     position: relative;
     margin-top:150px;
@@ -133,8 +132,8 @@ p {
   }
   
   .carousel img {
-    max-width: 1200px; /* Each image takes full width of the carousel */
-    height: 550px; /* Make sure the height is always 100% */
+    max-width: 900px; /* Each image takes full width of the carousel */
+    height: auto; /* Make sure the height is always 100% */
     object-fit: cover;
       border-radius:15px;
     justify-content:center;
