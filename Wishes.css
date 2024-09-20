@@ -143,7 +143,7 @@ p {
 
   .carousel img {
 
-    min-width: 100%; /* Each image takes full width of the carousel */
+    max-width: 900px; /* Each image takes full width of the carousel */
 
     height: 100%; /* Make sure the height is always 100% */
 
