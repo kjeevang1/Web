@@ -58,7 +58,7 @@ p {
 .birthday-video {
     width: 100%;
     max-width: 900px;
-     height: 500px;
+     max-height: 500px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
