@@ -119,9 +119,9 @@ p {
 
     width: 100%;
 
-    max-width: 600px; /* Maximum width for larger screens */
+    max-width: 1000px; /* Maximum width for larger screens */
 
-    height: 300px; /* Fixed height for carousel */
+    height: 500px; /* Fixed height for carousel */
 
     overflow: hidden;
 
