@@ -126,6 +126,7 @@ p {
     overflow: hidden;
 
     position: relative;
+    border-radius:5px;
 
   }
 
