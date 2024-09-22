@@ -57,7 +57,7 @@ p {
 
 .birthday-video {
     width: 100%;
-    max-width: 900px;
+    max-width: 800px;
     height: auto;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -119,9 +119,9 @@ p {
 
     width: 100%;
 
-    max-width: 900px; /* Maximum width for larger screens */
+    max-width: 600px; /* Maximum width for larger screens */
 
-    height: 450px; /* Fixed height for carousel */
+    height: 300px; /* Fixed height for carousel */
 
     overflow: hidden;
 
